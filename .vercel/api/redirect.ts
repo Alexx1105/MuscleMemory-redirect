@@ -1,7 +1,7 @@
- 
- 
- 
- const redirect = (url, asLink = false) => {          //false is for an http redirect 
+
+
+
+const redirect = (url, asLink = false) => {          //false is for an http redirect 
   try {
       if (asLink) {
         window.location.href = url;
