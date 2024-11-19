@@ -1,9 +1,0 @@
-{
-    "rewrites": [
-      {
-        "source": "/redirect",
-        "destination": "/api/redirect"
-      }
-    ]
-  }
-  
