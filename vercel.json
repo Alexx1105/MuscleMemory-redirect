@@ -1,0 +1,10 @@
+{
+    "functions": {
+      "api/**/*.ts": {
+        "runtime": "vercel-deno@1.0.0"
+      }
+    },
+    "routes": [
+      { "src": "/(.*)", "dest":"/api/redirect.ts" }
+    ]
+  }
