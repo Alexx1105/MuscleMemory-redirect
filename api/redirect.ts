@@ -1,4 +1,4 @@
-
+import {exchangeToken} from "./tokens.ts";
 
 
 const redirect = (url: string, asLink = false) => {               //false is for an http redirect 
@@ -17,9 +17,17 @@ const redirect = (url: string, asLink = false) => {               //false is for
 };
 
 const main = async() => {
-const redir = await redirect("MuscleMemory.KimchiLabs.com://", false);
+
+  const redir = await redirect("MuscleMemory.KimchiLabs.com://", false);
 if (redir.status === 301) {
   console.log("successful redirect", {redir})
   }
+
+    const tokenExchange = exchangeToken();
+      if (tokenExchange == null) {
+        console.log("POST request sent", {tokenExchange});
+    }
+  
+
 };
 main();
