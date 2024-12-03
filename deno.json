@@ -1,0 +1,9 @@
+{
+    "tasks": {
+      "start": "deno run --allow-net api/redirect.ts"
+    },
+    "importMap": "./import_map.json",
+    "compilerOptions": {
+      "lib": ["dom", "deno.ns"]
+    }
+  }

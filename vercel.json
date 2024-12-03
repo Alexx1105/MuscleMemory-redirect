@@ -5,6 +5,9 @@
       }
     },
     "routes": [
-      { "src": "/redirect", "dest":"/api/redirect.ts" }
+      { "src": "", "dest":"/api/redirect.ts" }
     ]
+    
   }
+
+  
